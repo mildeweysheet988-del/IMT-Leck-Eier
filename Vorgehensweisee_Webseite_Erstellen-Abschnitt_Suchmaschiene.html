@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Um sich bei der Website-Erstellung Zeit zu sparen und zu einem optimalen Ergebnis zu gelangen, gibt es eine einfache Vorgehensweise – wie wird hier gezeigt.">
+    <meta name="keywords" content="Website erstellen, Anleitung, Einsteiger, HTML, CSS, Webdesign, Hosting, Praxisanleitung">
+    <title>Suchmaschinen</title>
+    <link rel="stylesheet" href="design.css">
+    </head>
+    <body>
+        <header>
+            <h1>Suchmaschinen</h1>
+            <p>Suche nach Informationen auf verschiedenen Suchmaschinen.</p>
+        </header>
+
+        <main>
+            <section class="search-engines">
+                <h2>Websuche</h2>
+                <p>Gib den Suchbegriff ein und wähle eine Suchmaschine durch den passenden Button.</p>
+                <form action="https://www.google.com/search" method="get" target="_blank">
+                    <label for="query-google">Google:</label><br>
+                    <input type="search" id="query-google" name="q" placeholder="Suchbegriff eingeben" required>
+                    <button type="submit">Google suchen</button>
+                </form>
+                <form action="https://duckduckgo.com/" method="get" target="_blank">
+                    <label for="query-duckduckgo">DuckDuckGo:</label><br>
+                    <input type="search" id="query-duckduckgo" name="q" placeholder="Suchbegriff eingeben" required>
+                    <button type="submit">DuckDuckGo suchen</button>
+                </form>
+                <form action="https://www.bing.com/search" method="get" target="_blank">
+                    <label for="query-bing">Bing:</label><br>
+                    <input type="search" id="query-bing" name="q" placeholder="Suchbegriff eingeben" required>
+                    <button type="submit">Bing suchen</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class="copyright">
+                <p>&copy;Simon Ruppel Alle Rechte vorbehalten.</p>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,155 @@
+/* ==============================
+   Grundlayout der Seite
+   ============================== */
+
+/* Allgemeine Seiteneinstellungen */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    padding: 0;
+    background-color: white;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Kopfbereich */
+header {
+    background-color: #2f80ed;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    transition: transform 0.3s ease;
+    transform: translateY(0);
+}
+
+header.hide {
+    transform: translateY(-100%);
+}
+    
+/* Hauptbereich */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    display: block;
+}
+
+/* Abschnitte */
+section {
+    margin-bottom: 25px;
+}
+
+/* Überschriften */
+h1, h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Listen */
+ul {
+    padding-left: 20px;
+}
+
+/* Fußbereich */
+footer {
+    background-color: white;
+    text-align: left;
+    padding: 15px;
+    font-size: 0.9em;
+}
+/* Kasten-Design */
+details {
+    width: 100%; /* Box füllt die gesamte Breite */
+    max-width: 600px; /* maximale Breite */
+    box-sizing: border-box; /* Padding wird innerhalb der Breite gerechnet */
+    border: 2px solid #2f80ed;
+    border-radius: 10px;
+    padding: 10px;
+}
+.box_info {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+/* Verschiedene Farben */
+.box {
+    background-color: white;
+    border-color: white;
+}
+
+summary {
+    font-weight: bold;
+    font-size: 16px;
+    list-style: none; /* entfernt Pfeil-Standart im Browser */
+    cursor: pointer;
+}
+/* Text der angezeigt wird */
+details div {
+    margin-top: 10px;
+}
+
+/* Button-Stil */
+#backToTop {
+    display: none; /* Anfangs unsichtbar */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transition: background-color 0.3s ease;
+}
+
+#backToTop:hover {
+    background-color: #555;
+}
+    /* Standard-Linkfarbe */
+    a:link {
+        color: black; /* z. B. Blau */
+        text-decoration: none; /* Unterstreichung entfernen */
+    }
+
+    /* Besuchter Link */
+    a:visited {
+        color: black;
+    }
+
+    /* Hover-Effekt */
+    a:hover {
+        color: black;
+        text-decoration: underline; /* Unterstreichung beim Hover */
+    }
+
+    /* Aktiver Link (beim Klicken) */
+    a:active {
+        color: black;
+    }
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.copyright {
+    font-size: 0.8em;
+    color: #666;
+    text-align: left;
+    margin-top: 20px;
+}
